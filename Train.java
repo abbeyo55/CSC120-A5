@@ -18,7 +18,7 @@ public class Train {
         * @param fuelType The type of fuel the train is using.
         * @param fuelCapacity The amount of fuel the train can hold.
         * @param nCars The number of cars attached to the train.
-        * @param maximum_capacity The maximum amount of people that can fit in a train car.
+        * @param passengerCapacity The maximum amount of people that can fit in a train car.
         */
     public Train(FuelType fuelType, double fuelCapacity, int nCars, int passengerCapacity) {
         
