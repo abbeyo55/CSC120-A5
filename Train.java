@@ -84,5 +84,29 @@ public class Train {
     }
 
 
+    public static void main(String[] args) {
+        Train mytrain = new Train(FuelType.ELECTRIC, 50, 2, 6);
+
+        //add cars with different capacities
+        Car myCar = new Car(10);
+        Car car1 = new Car(2);
+        Car car2 = new Car(5);
+
+        // add passegers with specified names
+        Passenger Abbey = new Passenger("Abbey");
+        Passenger Elli = new Passenger("Elli");
+        Passenger Andrea = new Passenger("Andrea");
+
+        //add passengers to designated cars 
+        car1.addPassenger(Abbey);
+        car2.addPassenger(Elli);
+        myCar.addPassenger(Andrea);
+
+        //prints manifest as well as who is in the car
+        myCar.printManifest();
+        car1.printManifest();
+        car2.printManifest();
+        System.out.println(mytrain);
+      }
 }
 
